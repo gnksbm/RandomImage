@@ -8,17 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		BECB29EF2C89B41700671266 /* RandomImageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECB29EE2C89B41700671266 /* RandomImageApp.swift */; };
-		BECB29F12C89B41700671266 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECB29F02C89B41700671266 /* ContentView.swift */; };
+		BECB29F12C89B41700671266 /* RandomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECB29F02C89B41700671266 /* RandomImageView.swift */; };
 		BECB29F32C89B41A00671266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BECB29F22C89B41A00671266 /* Assets.xcassets */; };
 		BECB29F62C89B41A00671266 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BECB29F52C89B41A00671266 /* Preview Assets.xcassets */; };
+		BECB29FD2C89B51E00671266 /* CustomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECB29FC2C89B51E00671266 /* CustomNavigationView.swift */; };
+		BECB2A032C89BD6B00671266 /* ImageSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECB2A022C89BD6B00671266 /* ImageSection.swift */; };
+		BECB2A062C89BD7800671266 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECB2A052C89BD7800671266 /* NetworkService.swift */; };
+		BECB2A082C89BD8E00671266 /* RandomImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECB2A072C89BD8E00671266 /* RandomImageViewModel.swift */; };
+		BECB2A0A2C89BD9C00671266 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECB2A092C89BD9C00671266 /* ViewModelType.swift */; };
+		BECB2A0C2C89BDC900671266 /* CustomAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECB2A0B2C89BDC900671266 /* CustomAsyncImage.swift */; };
+		BECB2A112C89C1A600671266 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = BECB2A102C89C1A600671266 /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BECB29EB2C89B41700671266 /* RandomImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BECB29EE2C89B41700671266 /* RandomImageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomImageApp.swift; sourceTree = "<group>"; };
-		BECB29F02C89B41700671266 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BECB29F02C89B41700671266 /* RandomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomImageView.swift; sourceTree = "<group>"; };
 		BECB29F22C89B41A00671266 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BECB29F52C89B41A00671266 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BECB29FC2C89B51E00671266 /* CustomNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationView.swift; sourceTree = "<group>"; };
+		BECB2A022C89BD6B00671266 /* ImageSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSection.swift; sourceTree = "<group>"; };
+		BECB2A052C89BD7800671266 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		BECB2A072C89BD8E00671266 /* RandomImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomImageViewModel.swift; sourceTree = "<group>"; };
+		BECB2A092C89BD9C00671266 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		BECB2A0B2C89BDC900671266 /* CustomAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAsyncImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BECB2A112C89C1A600671266 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,10 +65,11 @@
 		BECB29ED2C89B41700671266 /* RandomImage */ = {
 			isa = PBXGroup;
 			children = (
-				BECB29EE2C89B41700671266 /* RandomImageApp.swift */,
-				BECB29F02C89B41700671266 /* ContentView.swift */,
-				BECB29F22C89B41A00671266 /* Assets.xcassets */,
-				BECB29F42C89B41A00671266 /* Preview Content */,
+				BECB29FF2C89BD4100671266 /* Presentation */,
+				BECB29FE2C89BD3D00671266 /* Model */,
+				BECB2A042C89BD6E00671266 /* Foundation */,
+				BECB2A002C89BD5400671266 /* App */,
+				BECB2A012C89BD5B00671266 /* Resources */,
 			);
 			path = RandomImage;
 			sourceTree = "<group>";
@@ -65,6 +80,67 @@
 				BECB29F52C89B41A00671266 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BECB29FE2C89BD3D00671266 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BECB2A022C89BD6B00671266 /* ImageSection.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BECB29FF2C89BD4100671266 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				BECB2A0E2C89BE8300671266 /* Random */,
+				BECB2A0D2C89BE7600671266 /* Custom */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		BECB2A002C89BD5400671266 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BECB29EE2C89B41700671266 /* RandomImageApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BECB2A012C89BD5B00671266 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BECB29F22C89B41A00671266 /* Assets.xcassets */,
+				BECB29F42C89B41A00671266 /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BECB2A042C89BD6E00671266 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				BECB2A052C89BD7800671266 /* NetworkService.swift */,
+				BECB2A092C89BD9C00671266 /* ViewModelType.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		BECB2A0D2C89BE7600671266 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				BECB29FC2C89B51E00671266 /* CustomNavigationView.swift */,
+				BECB2A0B2C89BDC900671266 /* CustomAsyncImage.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		BECB2A0E2C89BE8300671266 /* Random */ = {
+			isa = PBXGroup;
+			children = (
+				BECB29F02C89B41700671266 /* RandomImageView.swift */,
+				BECB2A072C89BD8E00671266 /* RandomImageViewModel.swift */,
+			);
+			path = Random;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +159,9 @@
 			dependencies = (
 			);
 			name = RandomImage;
+			packageProductDependencies = (
+				BECB2A102C89C1A600671266 /* ComposableArchitecture */,
+			);
 			productName = RandomImage;
 			productReference = BECB29EB2C89B41700671266 /* RandomImage.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +190,9 @@
 				Base,
 			);
 			mainGroup = BECB29E22C89B41700671266;
+			packageReferences = (
+				BECB2A0F2C89C1A600671266 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = BECB29EC2C89B41700671266 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +219,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BECB29F12C89B41700671266 /* ContentView.swift in Sources */,
+				BECB2A062C89BD7800671266 /* NetworkService.swift in Sources */,
+				BECB29FD2C89B51E00671266 /* CustomNavigationView.swift in Sources */,
+				BECB2A032C89BD6B00671266 /* ImageSection.swift in Sources */,
+				BECB2A082C89BD8E00671266 /* RandomImageViewModel.swift in Sources */,
+				BECB29F12C89B41700671266 /* RandomImageView.swift in Sources */,
+				BECB2A0C2C89BDC900671266 /* CustomAsyncImage.swift in Sources */,
 				BECB29EF2C89B41700671266 /* RandomImageApp.swift in Sources */,
+				BECB2A0A2C89BD9C00671266 /* ViewModelType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +359,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"RandomImage/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"RandomImage/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = ASU4PNB5MG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -300,7 +388,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"RandomImage/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"RandomImage/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = ASU4PNB5MG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -344,6 +432,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BECB2A0F2C89C1A600671266 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.14.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BECB2A102C89C1A600671266 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BECB2A0F2C89C1A600671266 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BECB29E32C89B41700671266 /* Project object */;
 }
