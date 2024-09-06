@@ -6,12 +6,19 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct RandomImageApp: App {
     var body: some Scene {
         WindowGroup {
-            RandomImageView()
+            RandomImageView(
+                store: Store(
+                    initialState: RandomImageReducer.State()
+                ) {
+                    RandomImageReducer()
+                }
+            )
         }
     }
 }

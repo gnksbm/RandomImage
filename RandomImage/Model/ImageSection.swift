@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ImageSection: Identifiable {
+struct ImageSection: Identifiable, Equatable {
     let id = UUID()
     let title: String
     let urls: [URL?] = (0...20).map { _ in

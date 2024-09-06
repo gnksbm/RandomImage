@@ -18,6 +18,7 @@
 		BECB2A0A2C89BD9C00671266 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECB2A092C89BD9C00671266 /* ViewModelType.swift */; };
 		BECB2A0C2C89BDC900671266 /* CustomAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECB2A0B2C89BDC900671266 /* CustomAsyncImage.swift */; };
 		BECB2A112C89C1A600671266 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = BECB2A102C89C1A600671266 /* ComposableArchitecture */; };
+		BED71C952C89C3C100EE47F9 /* RandomImageReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED71C942C89C3C100EE47F9 /* RandomImageReducer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		BECB2A072C89BD8E00671266 /* RandomImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomImageViewModel.swift; sourceTree = "<group>"; };
 		BECB2A092C89BD9C00671266 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		BECB2A0B2C89BDC900671266 /* CustomAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAsyncImage.swift; sourceTree = "<group>"; };
+		BED71C942C89C3C100EE47F9 /* RandomImageReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomImageReducer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 			children = (
 				BECB29F02C89B41700671266 /* RandomImageView.swift */,
 				BECB2A072C89BD8E00671266 /* RandomImageViewModel.swift */,
+				BED71C942C89C3C100EE47F9 /* RandomImageReducer.swift */,
 			);
 			path = Random;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				BECB2A082C89BD8E00671266 /* RandomImageViewModel.swift in Sources */,
 				BECB29F12C89B41700671266 /* RandomImageView.swift in Sources */,
 				BECB2A0C2C89BDC900671266 /* CustomAsyncImage.swift in Sources */,
+				BED71C952C89C3C100EE47F9 /* RandomImageReducer.swift in Sources */,
 				BECB29EF2C89B41700671266 /* RandomImageApp.swift in Sources */,
 				BECB2A0A2C89BD9C00671266 /* ViewModelType.swift in Sources */,
 			);
