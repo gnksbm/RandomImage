@@ -10,7 +10,6 @@ import ComposableArchitecture
 
 struct RandomImageReducer: Reducer {
     struct State: Equatable {
-        var path = StackState<Path.State>()
         var sections = [
             ImageSection(title: "첫번째 섹션"),
             ImageSection(title: "두번째 섹션"),
@@ -29,4 +28,3 @@ struct RandomImageReducer: Reducer {
         return .none
     }
 }
-
