@@ -8,8 +8,11 @@
 import SwiftUI
 import ComposableArchitecture
 
-struct RandomImageReducer: Reducer {
+@Reducer
+struct RandomImageReducer {
+    @ObservableState
     struct State: Equatable {
+        @Presents var detailImage: DetailImageReducer.State?
         var sections = [
             ImageSection(title: "첫번째 섹션"),
             ImageSection(title: "두번째 섹션"),
@@ -22,9 +25,23 @@ struct RandomImageReducer: Reducer {
     
     enum Action {
         case imageTapped(URL?)
+        case detailImage(PresentationAction<DetailImageReducer.Action>)
     }
     
-    func reduce(into state: inout State, action: Action) -> Effect<Action> {
-        return .none
+    var body: some ReducerOf<Self> {
+        Reduce { state, action in
+            switch action {
+            case .imageTapped(let url):
+                state.detailImage = DetailImageReducer.State(url: url)
+                return .none
+            case .detailImage(.presented(.dismiss)):
+                return .none
+            case .detailImage:
+                return .none
+            }
+        }
+        .ifLet(\.$detailImage, action: \.detailImage) {
+            DetailImageReducer()
+        }
     }
 }

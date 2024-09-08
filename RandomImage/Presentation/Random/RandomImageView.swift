@@ -9,7 +9,7 @@ import SwiftUI
 import ComposableArchitecture
 
 struct RandomImageView: View {
-    let store: StoreOf<RandomImageReducer>
+    @ComposableArchitecture.Bindable var store: StoreOf<RandomImageReducer>
     
     var body: some View {
         WithViewStore(store, observe: { $0 }) { viewStore in
@@ -35,6 +35,14 @@ struct RandomImageView: View {
                             }
                         }
                     }
+                }
+                .navigationDestination(
+                    item: $store.scope(
+                        state: \.detailImage,
+                        action: \.detailImage
+                    )
+                ) { store in
+                    DetailImageView(store: store)
                 }
             }
             .padding()
